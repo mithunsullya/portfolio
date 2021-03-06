@@ -122,8 +122,8 @@
       color: transparent;
 
       position: relative;
-      top: 0px;
-      right: 30px;
+      top: 0;
+      right: 0;
    }
 
 	#nav-wrap > a:before,
@@ -152,7 +152,7 @@
       float: right;     
 
       position: relative;
-      top: 12px;
+      top: 0;
       right: 0;
    }
 
@@ -275,6 +275,13 @@
       line-height: 42px;      
    }
 
+   @media screen and (max-width: 767px) {
+      .slides {
+         display: flex;
+         flex-wrap: wrap;
+      }
+   }
+
    /* Control Nav */
    .flex-control-nav {
       text-align: center;
@@ -336,6 +343,12 @@
    }
 
 
+}
+
+@media  screen and (max-width: 767px) {
+   .description-text {
+      text-align: center;
+   }
 }
 
 /* mobile narrow

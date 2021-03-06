@@ -759,7 +759,9 @@ call-to-action .button {
 .no-js .slides > li:first-child { display: block; }
 
 /* Slider Styles */
-.slides { zoom: 1; }
+.slides { zoom: 1;
+   display: flex;
+   flex-wrap: wrap; }
 .slides > li {
    /*margin-right: 5px; */
    overflow: hidden;
